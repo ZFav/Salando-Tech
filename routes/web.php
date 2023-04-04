@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PageController::class, 'pag1'])->name('homepage');
+
+Route::get('/list',[PageController::class, 'pagList'])->name('list');
+
+Route::get('/show/{id}',[PageController::class, 'pagShow'])->name('show');

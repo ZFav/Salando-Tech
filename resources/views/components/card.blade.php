@@ -3,8 +3,7 @@
         <img class="card-img-top" style="height: 25rem" src="{{$item['image']}}" alt="..." />
         <div class="card-body p-4">
             <div class="badge bg-primary bg-gradient rounded-pill mb-2">{{$item['category']}}</div>
-            {{-- <a class="text-decoration-none link-dark stretched-link" href="{{route('show', ['id' => $data->id])}}"> --}}
-            <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">{{$item['title']}}</h5></a>
+            <a class="text-decoration-none link-dark stretched-link" href="{{route('show', ['id' => $item['id']])}}"><h5 class="card-title mb-3">{{$item['title']}}</h5></a>
             <p class="card-text mb-0">{{$item['description']}}</p>
         </div>
         <div class="card-footer p-4 pt-0 bg-transparent border-top-0">

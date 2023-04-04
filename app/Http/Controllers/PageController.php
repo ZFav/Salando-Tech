@@ -16,6 +16,21 @@ class PageController extends Controller
         return view('index', ['items' => $items]);
     }
 
+    public function pagList(){
+        $items = Http::get("https://fakestoreapi.com/products/")->json();
+        
+        return view('list', ['items' => $items]);
+    }
 
+    public function pagShow($id){
+        $items = Http::get("https://fakestoreapi.com/products/")->json();
+        foreach ($items as $item) {
+            if ($item['id']==$id) {
+                return view('show', ['item'=>$item]);
+            }
+        }
+
+        
+    }
 
 }
