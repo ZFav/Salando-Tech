@@ -20,3 +20,7 @@ Route::get('/', [PageController::class, 'pag1'])->name('homepage');
 Route::get('/list',[PageController::class, 'pagList'])->name('list');
 
 Route::get('/show/{id}',[PageController::class, 'pagShow'])->name('show');
+
+Route::post('/invio', [PageController::class, 'send'])->name('send');
+
+Route::get('/thank', [PageController::class, 'thank'])->name('thank');

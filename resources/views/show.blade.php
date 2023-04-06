@@ -17,7 +17,7 @@
                
 
             </div>
-            <!-- Call to action-->
+            <x-form :$item/>
             <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
                 <div
                     class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
